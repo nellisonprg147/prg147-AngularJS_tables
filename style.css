@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.body {
+
+    font-family: Tohma, Geneva, sans-serif;
+    font-size: 1em;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background-image: url("images/iceBackground.jpg");
+    min-height: 500px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.header{
+    background-color:cornflowerblue;
+    color:white;
+    text-align: center;
+    text-align-all: center;
+    height:50px;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 1.5em;
+    border: solid ;
+    border-color: black;
+    border-radius: 5px;
+}
+h1 {
+    color:white;
+    padding-left: 15px;
+}
+p {
+    color:white;
+    padding-left: 25px;
+}
+table, th , td  {
+    color:white;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table tr:nth-child(odd) {
+    background-color: transparent;
+}
+table tr:nth-child(even) {
+    color: white;
+    background-color:black;
+    opacity: 0.5;
+}
+.title{
+    font-size: 1em;
+    color:white;
+}
+.footer {
+    text-align: center;
+}

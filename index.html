@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PRG 147 Anglar JS Tables</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body class="body">
+
+    <div class="header">
+        <div class="title">Angular JS Tables</div>
+    </div>
+    <div class="container">
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <h1>Things I Like About Winter</h1>
+        <p>Click on the Headings to Filter the Categories Alphabetically</p>
+
+        <table style="width:100%">
+            <tr>
+                <th ng-click="orderByMe('sport')">Winter Activities</th>
+                <th ng-click="orderByMe('snow')">Types of Snow</th>
+                <th ng-click="orderByMe('food')">Comfort Foods</th>
+                <th ng-click="orderByMe('gear')">Winter Gear</th>
+                <th ng-click="orderByMe('family')">Family</th>
+            </tr>
+            <tr ng-repeat ="x in sport | orderBy:myOrderBy">
+                <td>{{x.sport}}</td>
+                <td>{{x.snow}}</td>
+                <td>{{x.food}}</td>
+                <td>{{x.gear}}</td>
+                <td>{{x.family}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+</body>
+<div class="footer">
+
+    <p><a href="http://nellison.mccdgm.net/index.html">Assignment Index</a></p>
+</div>
+
+</html>
